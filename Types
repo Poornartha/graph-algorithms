@@ -1,0 +1,41 @@
+
+1. Undirected Graph:
+- edges have no orientation
+- E(u, v) = E(v, u)
+
+2. Directed Graphs:
+- edges have orientation
+- E(u, v) != E(v, u)
+
+3. Weighted Graphs => Can be Undirected or Directed
+
+Special Graphs:
+
+- Trees 
+- Rooted Trees
+- Directed Acyclic Graphs
+- Bipartite Graphs: Vertices are split into 2 groups
+- Complete Graph: Unique Edge between every pair of nodes
+
+Representation of Graphs:
+
+- Adjacency Matrix:
+    - Matrix[m][n] represents Weight(m, n) for Edge(m, n)
+    - Edge Lookup O(1)
+    - Requires Space: O(V^2)
+    - Space Efficinet for Dense Graphs
+
+- Adj List:
+    - Map of Nodes to List of edges
+    - Space Efficient for sparse Graphs
+    - Edge Lookup = O(E)
+    - Less Efficient for Dense Graphs
+
+- Edge List:
+    - Unordered List of Edges 
+    - Represented as (From_vertex, To_vertex, Weight)
+    - Edge Lookup is O(E)
+    - Space Efficient for sparse Graphs
+
+
+

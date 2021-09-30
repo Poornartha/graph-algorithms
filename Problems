@@ -1,0 +1,43 @@
+
+Common Graph Theory Problems:
+
+1. Shortest Path Problem
+    - Given a weighted graph find the shortest path from Node A to B.
+    - Algorithms: BFS (Unweighted Graphs), Dijkstra's Algorithm, Bellman-Ford, Floyd-Warshall, A*, etc.
+
+2. Connectivity:
+    - Is there a path from Node A to Node B
+    - Algorithms: Union Find Data Structure or BFS / DFS
+
+3. Detecting Negative Cycles:
+    - Does my weighted graph have Negative Cycles?
+    - Algorithms: Bellman-Ford and Floyd Warshall
+
+4. Strongly Connected Component:
+    - Strongly Connected Components can be thought as self-contained cycles within a Directed Graph where 
+      vertex in a given cycle can reach any other vertex in the same cycle.
+    - Algorithms: Tarjan's and Kosaraju's Algorithm
+
+5. Travelling Salesman Problem:
+    - Given a list of cities and distances between each city, what is the shortest possible pair of cities
+      that visits each city once and returns to the original city.
+    - Algorithms: Held-Karp, Branch and Bound, Approximate Algorithms
+
+6. Briges / Cut Edges:
+    - Edge whose removal increases the number of connected components.
+
+7. Articulation Points:
+    - An Articulation Point / Cut vertex is any node in the graph whose removal increaes the number of
+      connected components.
+
+8. Minimum Spanning Tree:
+    - Subset of edges of a connected, edge-weighted graph that connects all the vertices together, 
+      without any cycles and with the minimum possible total edge weight.
+    - Algorithms: Kruskal's, Prim's Algorithm
+
+9. Network Flow: Max Flow
+    - With an infinite input source, how much flow can we push onto the graph.
+    - Algorithms: Ford-Fulkerson, Edmonds-Karp & Dinic's Algorithm
+
+
+ 

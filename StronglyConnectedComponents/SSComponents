@@ -1,0 +1,5 @@
+
+Strongly Connected Cycles can be considered as Self-Contained Cycles 
+with in a directed graph where every vertex in a given graph cycle 
+can reach evey other vertex in the same cycle.
+

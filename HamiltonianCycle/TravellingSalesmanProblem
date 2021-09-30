@@ -1,0 +1,47 @@
+
+Problem: 
+Given a list of cities and the distances between each pair of the cities,
+what is the shortest possible route that visits each city exactly once and 
+returns back to the original city.
+
+In other words, 
+Given a complete graph with weighted edges what is the 
+Hamiltonian Cycle (Path that visits every node once)
+of minimum cost.
+
+NP Complete Problem
+
+Brute Force: O(n!)
+Compute all the paths and find the one with minimum cost.
+
+Dynamic Approach: O(n^2 * 2 ^ n)
+
+Algorithm:
+
+Before Starting, make sure to select a node 0 <= S < N
+to be the designated start node for the tour.
+
+Next, compute and store the optimal value from S to each node X (!= S).
+This will solve TSP for all paths of length = 2
+
+To compute the optimal solution for paths of Length = 3, 
+we need to store 2 things from each n=2 cases:
+
+1. The set of visited nodes in the subpath.
+2. The index of last visited node in the path.
+
+Together these 2 form out DP State.
+
+There are N possible nodes we could have visited last each having a 2^N subset of nodes.
+Thus, the space complexity = O(N * 2^N)
+
+Binary representation of the visited nodes for eg. 1001 
+can be used to store the set of visited nodes.
+1001 means that 0th and 3rd nodes were visited.
+
+To complete the TSP tour, we need to connect outtour back to s.
+
+Loop over the end state in the Memo Table, 
+and minimize the cost of lookup value in the table and the cost of going back to the Start.
+
+

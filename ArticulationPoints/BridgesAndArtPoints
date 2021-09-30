@@ -1,0 +1,7 @@
+
+A bridge / cut edge is any edge in a graph whose removal increases the number
+of connected components.
+
+An Articulation Point / cut vertex is any node in a graph whose removal increases 
+the number of connected components.
+
